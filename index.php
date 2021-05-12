@@ -1,3 +1,14 @@
+<?php
+//unset($_SESSION['blog_user_id']);
+include("classes/autoloader.php");
+$login = new Login();
+$user_data = $login->check_login($_SESSION['blog_user_id']);
+
+if($user_data){
+  header("Location: feed.php");
+  die;
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
