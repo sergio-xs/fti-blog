@@ -1,0 +1,52 @@
+#email_sent{
+    margin-right:0;
+    background: url("../img/mail_background.svg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4d4d4d;
+    justify-content: center;
+}
+
+
+/*Per gjeresi ekrani me te madhe se ose te barabarte me 1024px dhe lartesi maksimale ose te barabarte me 1310px*/
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+    #signupPage{
+        background: url("../img/mail_background.svg") no-repeat center center fixed;
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+/* Per gjeresi ekrani me te vogel se ose te barabarte 768px*/
+@media screen and (max-width: 768px){
+    #signupPage{
+        background: #FDEDE4;
+    }    
+}
+
+
+
+/* Per ipad */
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    #signupPage{
+        background: #FDEDE4;
+     
+    }
+}
+
+/* Per ipad pro*/
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+    
+    #signupPage{
+        background:  #FDEDE4;
+    }
+}
+
+

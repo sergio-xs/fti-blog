@@ -1,0 +1,10 @@
+<?php
+ob_start();
+session_start();
+include("connection.php");
+include("classes/login.php");
+include("classes/user.php");
+include("classes/post.php");
+include("classes/file.php");
+include("relationships.php");
+?>

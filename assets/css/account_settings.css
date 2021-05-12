@@ -1,0 +1,102 @@
+@import "navbar.css";
+#edit{
+    margin-right:0;
+    background: url("../img/white.svg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+
+#card_header{
+    height: 15vh;
+}
+#header{
+    color: #4d4d4d;
+}
+
+.padding{
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+}
+
+.edit_buttons{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1em;
+    box-shadow:  3px 3px 10px #4d4d4d60;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#save_changes{
+    background-color:#f29a6ace; 
+    color:#4d4d4d;
+  }
+
+#cancel{
+    background-color:#4d4d4d;
+    color:white; 
+}
+
+.error{
+    color: rgb(139, 44, 44)!important;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#delete_acc{
+  text-decoration: none;
+  color:rgb(241, 16, 16);
+}
+
+#delete_acc:hover{
+  text-decoration: none;
+  color:rgb(241, 16, 16);
+  cursor: pointer;
+}
+
+/*Per ta ber tekstin shake*/
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+
+/* Per gjeresi ekrani me te vogel se ose te barabarte 768px*/
+@media screen and (max-width: 768px){
+   #card{
+       width: 85%;
+   }
+
+    
+}
+
+/*Per gjeresi ekrani me te madhe se ose te barabarte me 1024px dhe lartesi maksimale ose te barabarte me 1310px*/
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+   
+    #card{
+        width: 50%;
+    }
+   
+}
+
+
+

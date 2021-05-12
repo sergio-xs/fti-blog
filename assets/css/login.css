@@ -1,0 +1,240 @@
+#loginPage{
+    background: url("../img/signup-background.svg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+#login_form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4d4d4d;
+}
+
+#login_form input{
+    border: none;
+    border-radius: 0.7em;
+    box-shadow:  3px 3px 10px #4d4d4d60;
+}
+
+
+.login_button{
+  background-color:#f29a6ace; 
+  border: none;
+  color:#4d4d4d;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1em;
+  box-shadow:  3px 3px 10px #4d4d4d60;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login_button:hover{
+    background-color:#4d4d4d; 
+    color:white;
+}
+
+#noAcc{
+    text-decoration: none;
+    color: #4d4d4d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.error{
+    color: rgb(139, 44, 44)!important;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Per ta ber tekstin shake*/
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+.TWE{
+    width: max-content;
+}
+.Iam {
+    font: normal 40px/50px Montserrat, sans-serif;
+    color: #4d4d4d;
+  }
+  .Iam p {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .Iam b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    
+  }
+  .Iam .innerIam {
+    display: inline-block;
+    color: #F2996A;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+  
+  
+  /*animation*/
+  -webkit-animation:move 5s;
+     -moz-animation:move 5s;
+      -ms-animation:move 5s;
+       -o-animation:move 5s;
+          animation:move 5s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count:infinite;
+     -moz-animation-iteration-count:infinite;
+      -ms-animation-iteration-count:infinite;
+       -o-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+  /*animation-delay*/
+  -webkit-animation-delay:1s;
+     -moz-animation-delay:1s;
+      -ms-animation-delay:1s;
+       -o-animation-delay:1s;
+          animation-delay:1s;
+  }
+  @keyframes move{
+  0%  { top: 0px; }
+  20% { top: -50px; }
+  40% { top: -100px; }
+  60% { top: -150px; }
+  80% { top: -200px; }
+  }
+  
+  @-webkit-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+  @-moz-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+  @-o-keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+  @keyframes move {
+      0%  { top: 0px; }
+      20% { top: -50px; }
+      40% { top: -100px; }
+      60% { top: -150px; }
+      80% { top: -200px; }
+  }
+
+  /* Per gjeresi ekrani me te vogel se ose te barabarte 768px*/
+@media screen and (max-width: 768px){
+    #loginPage{
+        background: #FDEDE4;
+    }
+
+    
+    .Iam{
+        font: normal 20px/30px Montserrat, sans-serif;
+    }
+
+    .Iam p {
+        height: 30px;
+        margin-right: 0.3em;
+      }
+      .Iam b {
+
+        height: 30px;
+        
+      }
+    
+}
+
+/*Per gjeresi ekrani me te madhe se ose te barabarte me 1024px dhe lartesi maksimale ose te barabarte me 1310px*/
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+    #loginPage{
+        background: url("../img/signup-background.svg") no-repeat center center fixed;
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+        overflow: hidden;
+    }
+    #login_form{
+        width: 50vh;
+    }
+}
+
+/* Per ipad */
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+  #loginPage{
+      background: #FDEDE4;
+   
+  }
+
+  #login_row{
+    display: flex;
+    justify-content: center;
+  }
+  #login_form{
+    align-self: center;
+    width: 50%;
+    margin-right: 0px!important;
+}
+  form .btn{
+      height: 4vh !important; 
+  }
+}
+
+/* Per ipad pro*/
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+  
+  #loginPage{
+      background:  #FDEDE4;
+  }
+
+  #empty_col{
+    display: none;
+  }
+
+  #login_row{
+    display: flex;
+    justify-content: center;
+  }
+  #login_form{
+      align-self: center;
+      width: 100%;
+  }
+
+  #form_row{
+      width: 100%;
+  }
+
+  form .btn{
+      height: 3vh !important; 
+  }
+}
+

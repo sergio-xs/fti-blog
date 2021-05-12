@@ -1,0 +1,14 @@
+.paggination{
+    text-align: center;
+    color: #b86b14;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.pagg{
+  text-align: center;
+}
+.paggination:hover{
+    text-decoration: none;
+    color: #b86b14;
+}

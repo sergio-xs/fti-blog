@@ -1,0 +1,202 @@
+@import "navbar.css";
+
+#profilePage{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: /*linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),*/ url('../img/white.svg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+*:focus, input:focus ,button:focus{
+    outline: 0;
+  }
+  
+/* Per ate backgroundin transparent gri*/
+#cover{
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow:  0px 3px 30px #3a333390;
+}
+
+/* Per transition e edit profile pic */
+.overlay{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5) ;
+    overflow: hidden;
+    height: 0;
+    left: 0px;
+    bottom: 0px;
+    transition: .5s ease;
+    width: 100%;
+    z-index: 1000;  
+}
+
+.circular:hover .overlay{
+    height: 30%;
+    cursor: pointer;
+}
+
+/* Per tekstin brenda edit profile pic*/
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4d4d4d;
+    font-size: 2vh;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%0);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* Per rofile picture */
+#uploaded_image{
+  object-fit: cover;
+  height: 100%;
+  width: 100%; 
+}
+
+/* Div qe i jep fotos se profilit formen rrethore*/
+.circular{
+    position: relative;
+    width: 12vw;
+    height: 12vw;
+    overflow: hidden;
+    border-radius: 50%;   
+    box-shadow:  0px 3px 30px #3a333390;
+}
+
+
+
+.fit-content-width{
+    width: fit-content;
+}
+
+
+
+#user_name{
+    color: #4d4d4d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#no_posts{
+    color: #4d4d4d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.fllw a{
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+/*Per te fshehur butonin e upload file*/
+#upload_button{
+    display: none;
+}
+
+/*Per dekorimin e connection button*/
+.connect-btn{ 
+  background-color:#f29a6aa2!important; 
+  border: none;
+  color:#4d4d4d;
+  margin-left: 1vh;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 2em;
+  box-shadow:  3px 3px 10px #4d4d4d60;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 2.5em;
+  }
+
+  .connect-btn:hover{
+    background-color:#4d4d4d!important;
+    color:white;
+  }
+
+
+.remove-decorations{
+    color:#4d4d4d;
+    text-decoration: none;
+    }
+.remove-decorations:hover{
+    color:#4d4d4d;
+    text-decoration: none;
+    }
+    
+hr{
+    height: 2px!important;
+    color: black;
+}
+
+.info_divs{
+    background: #f5b08e83;
+}
+
+#no_posts_img{
+    height: 40vh!important;
+    width: auto;
+}
+
+.modal{
+  z-index: 3000 !important;
+}
+/* Per gjeresi ekrani me te vogel se ose te barabarte 768px*/
+@media screen and (max-width: 768px){
+    .circular{
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .card-size{
+        width: 100%;
+    }
+    
+    nav .navbar-nav li a{
+        color: white !important;
+        margin-left: 0vh;
+        size: 20vh !important;
+        }
+    body{
+        padding: 0px!important;
+    }
+     
+
+    
+}
+
+/*Per gjeresi ekrani me te madhe se ose te barabarte me 1024px dhe lartesi maksimale ose te barabarte me 1310px*/
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+    .card-size{
+        width: 50%;
+    }
+  
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+    .card-size{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 768px) {
+    .card-size{
+        width: 85%;
+    }
+}
+
+.row{
+    flex-wrap: nowrap;
+}
+#remove-now{
+  color: #4d4d4d;
+  background-color: #F5B18E;
+  text-align: start;
+}

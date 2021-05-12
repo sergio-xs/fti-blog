@@ -1,0 +1,223 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+@import "navbar.css";
+@import "paggination.css";
+
+*:focus, button:focus{
+  outline: 0;
+}
+
+
+hr{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+/*===== BASE =====*/
+
+#quote{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #292b2c;
+}
+
+
+#posto-container{
+  background-color: #F5B18E;
+  border-radius: 10px;
+ /* background-image: url('../img/tenor.gif');*/
+  opacity: 0.8;
+ background-repeat: no-repeat;
+  background-size: cover;
+  color: #4d4d4d;
+ 
+}
+
+
+
+
+.posto{
+  width: 70%;
+}
+.post-btn1{
+  color: #000000;
+  border: none;
+  background-color: inherit;
+  
+}
+
+#feed{
+    background: url("../img/white.svg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: auto;
+    overflow-y: scroll; 
+}
+
+#komentt{
+    background: url("../img/white.svg") no-repeat center center fixed;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+    width: auto;
+    overflow-y: scroll; 
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.ikona{
+
+  position: relative;
+  width: 5vh;
+  height: 5vh;
+  overflow: hidden;
+  border-radius: 50%;   
+  box-shadow:  0px 3px 30px #3a333390;
+ 
+}
+
+.profile_img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%; 
+}
+
+.buttons{
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1em;
+  background: #F5B18E;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  display: block;
+  margin-left: 20px;
+  margin-top: -20px;
+
+}
+
+/*=============REACTIONS================*/
+.reaction:hover {
+  
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  margin-left: 1%;
+  margin-right: 1%;
+  
+}
+
+#delete-post:hover{
+  color: #F5B18E;
+
+}
+#remove-now{
+  color: #4d4d4d;
+  background-color: #F5B18E;
+  text-align: start;
+}
+.modal-footer{
+  display: block;
+  text-align: center;
+}
+
+/*=================== Postimi=======================*/
+.post-btn{
+    border: none;
+    background-color: inherit;
+    padding: 15px;
+    
+}
+
+.ikona_file{
+  width: 10%;
+}
+
+.modal{
+  z-index: 3000 !important;
+}
+/*=================== Postimi=======================*/
+#avatar img{
+  width: 3vw;
+  height: 3vw;
+  overflow: hidden;  
+  border-radius: 50%;   
+  margin-left: 20px;
+}
+
+#profile_image{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#postim{
+  background-color:#ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  border: #4d4d4d;
+  box-shadow:  0px 3px 30px #3a333390;
+}
+#like-comment{
+  font-size: 17px;
+}
+#komentet{
+  max-width: 100%;
+}
+.tedhena ul,li{
+  list-style-type: none;
+    padding-inline-start:0px;
+text-decoration: none!important;
+}
+
+.remove-decoration{
+  text-decoration: none;
+  color:#4d4d4d;
+}
+
+.remove-decoration:hover{
+  text-decoration: none;
+  color:#4d4d4d;
+}
+
+.orange{
+  color:#F5B18E;
+}
+
+
+@media screen and (min-width: 601px) {
+ body,.container{
+  font-size: 100%;
+ }
+    
+  
+}
+
+@media screen and (max-width: 600px) {
+  
+  body{
+    font-size: 14px;
+  }
+  .col-9{
+    max-width: 95% !important;
+  }
+  .container i, span{
+    font-size: 15px;
+  }
+  #posto-container{
+    font-size: 12px;
+  }
+  .container {
+    padding:0;
+    margin:0;
+  }
+}
+
+.img-responsive{
+  width: 100%;
+  max-height: 500px;
+}

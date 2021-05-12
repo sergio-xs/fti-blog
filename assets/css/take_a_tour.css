@@ -1,0 +1,149 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+    color: #383737;
+    background-color: white;
+  }
+  
+  body, html {
+    /* important */
+    height: 100%;
+  }
+  a {
+    color: #a6989a;
+  }
+  /* -------------------------------- 
+  
+  Modules - reusable parts of our design
+  
+  -------------------------------- */
+  .cd-container {
+    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .cd-container::after {
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  .cd-main-content {
+    /* you need to assign a min-height to the main content so that the children can inherit it*/
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .cd-fixed-bg {
+    position: relative;
+    min-height: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 1;
+  }
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    max-width: 1170px;
+    text-align: center;
+    font-size: 30px;
+    font-size: 1.875rem;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    color: white;
+  }
+  .cd-fixed-bg.cd-bg-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/upt7.jpg");
+  }
+  .cd-fixed-bg.cd-bg-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/upt3.jpg");
+  }
+  .cd-fixed-bg.cd-bg-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/students.jpg");
+  }
+  .cd-fixed-bg.cd-bg-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("../img/students.jpg");
+  }
+  @media only screen and (min-width: 320px) {
+    .cd-fixed-bg h1, .cd-fixed-bg h2 {
+      font-size: 36px;
+    }
+  }
+  @media only screen and (min-width: 480px) {
+    .cd-fixed-bg {
+      background-attachment: fixed;
+    }
+    .cd-fixed-bg h1, .cd-fixed-bg h2 {
+      font-size: 48px;
+      font-weight: 300;
+    }
+  }
+  
+  .cd-scrolling-bg {
+    position: relative;
+    min-height: 50%;
+    padding: 4em 0;
+    line-height: 1.6;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  .cd-scrolling-bg.cd-color-1 {
+    background-color: #313131;
+    color: white;
+  }
+  .cd-scrolling-bg.cd-color-2 {
+    background-color: #313131;
+    color: white;
+  }
+  .cd-scrolling-bg.cd-color-3 {
+    background-color: #313131;
+    color: white;
+  }
+
+  .evolve{
+    text-decoration: none;
+    color: #F5B18E ;
+  }
+
+  .evolve:hover{
+  
+    color: #F5B18E ;
+  }
+  @media only screen and (min-width: 480px) {
+    .cd-scrolling-bg {
+      padding: 8em 0;
+      font-size: 20px;
+      font-size: 1.25rem;
+      line-height: 2;
+      font-weight: 300;
+    }
+  }
+  
