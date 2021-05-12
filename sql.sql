@@ -68,10 +68,6 @@ CREATE TABLE `relationship` (
 --
 -- Dumping data for table `relationship`
 --
-
-INSERT INTO `relationship` (`id`, `user_one_id`, `user_two_id`, `status`, `action_user_id`) VALUES
-(82, 54357, 7111290, 0, 7111290);
-
 -- --------------------------------------------------------
 
 --

@@ -3,10 +3,19 @@
 //Menyra si e therret
 //$DB=Database::getInstance();
 class Database{
+    /*
     private $dbHost="localhost";
     private $dbUsername="root";
     private $dbPassword="";
     private $dbName="blog";
+    */
+
+    //REMOTE DATABASE 
+    private $dbHost="remotemysql.com";
+    private $dbUsername="3VZ65vWumF";
+    private $dbPassword="dMnv0v0J0H";
+    private $dbName="3VZ65vWumF";
+
     private static $database=NULL;
     private $connection=NULL;
     //Konstruktor privat qe mund te aksesohet vetem brenda klases
