@@ -34,10 +34,8 @@ class Signup
         //e krijon databaza vet
         $user_id = $this->krijo_user_id();
         //Generates a key that is an encryption of the time of creation and name thus it will always be unique
-        $this->vkey=md5(time().$data['emer'].$data['mbiemer']);
-        
+        $this->vkey=md5(time().$data['emer'].$data['mbiemer']);      
         $query = "INSERT INTO users (user_id,emer,mbiemer,email,fjalekalimi,role,verification_key) VALUES ('$user_id','$emer','$mbiemer','$email','$fjalekalimi','$roli','$this->vkey')";
-        echo $query;
         $database = Database::getInstance();
         return $database->save($query);
     }
